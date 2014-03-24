@@ -13,4 +13,8 @@ Depends: libclass-dbi-mysql-perl,
          ${misc:Depends},
          ${shlibs:Depends}
 Conflicts: 
-Description: A component for NGCP platform that provides a failsafe mechanism to reduce amoutn of "lost" calls in case of unexpected system crashes. Creates intermediate records for ongoing calls based on acc start (INVITE) records and fixes "lost" calls based on last intermediate time.
+Description: NGCP component to reduce amoutn of "lost" calls.
+ A component for NGCP platform that provides a failsafe mechanism
+ to reduce amoutn of "lost" calls in case of unexpected system crashes.
+ Creates intermediate records for ongoing calls based on acc start (INVITE)
+ records and fixes "lost" calls based on last intermediate time.
