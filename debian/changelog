@@ -1,3 +1,12 @@
+ngcp-acc-cdi (1.0.2.1+0~mr3.2.2.1) unstable; urgency=low
+
+  [ Alexander Lutay ]
+  * [343a936] MT#6191 Fixed building warning extended-description-is-empty
+
+  [ Sipwise Jenkins Builder ]
+
+ -- Sipwise Jenkins Builder <jenkins@sipwise.com>  Tue, 13 May 2014 11:48:16 +0200
+
 ngcp-acc-cdi (1.0.2.0+0~mr3.2.2.0) unstable; urgency=low
 
   * New release.
