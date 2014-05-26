@@ -1,3 +1,15 @@
+ngcp-acc-cdi (1.1.1.0+0~mr3.3.1.0) unstable; urgency=low
+
+  [ Alexander Lutay ]
+  * [6258386] MT#6191 Fixed building warning extended-description-is-empty
+
+  [ Michael Prokop ]
+  * [8f164da] MT#6511 Bump Standards-Version to 3.9.5
+
+  [ Sipwise Jenkins Builder ]
+
+ -- Sipwise Jenkins Builder <jenkins@sipwise.com>  Mon, 26 May 2014 15:32:34 +0200
+
 ngcp-acc-cdi (1.1.0.0+0~mr3.3.0.0) unstable; urgency=low
 
   * New release.
