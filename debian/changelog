@@ -1,3 +1,15 @@
+ngcp-acc-cdi (1.8.0.0+0~mr4.1.0.0) unstable; urgency=low
+
+  [ Kirill Solomko ]
+  * [9be16fc] perl no critic
+
+  [ Michael Prokop ]
+  * [fe2a9c1] MT#7505 Add .gitreview file for acc-cdi
+
+  [ Sipwise Jenkins Builder ]
+
+ -- Sipwise Jenkins Builder <jenkins@sipwise.com>  Mon, 13 Jul 2015 15:00:08 +0200
+
 ngcp-acc-cdi (1.7.0.0+0~mr4.0.0.0) unstable; urgency=low
 
   [ Michael Prokop ]
