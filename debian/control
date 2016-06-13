@@ -8,11 +8,10 @@ Homepage: http://sipwise.com/
 
 Package: ngcp-acc-cdi
 Architecture: all
-Depends: libclass-dbi-mysql-perl,
-         perl-modules,
-         ${misc:Depends},
-         ${shlibs:Depends}
-Conflicts: 
+Depends:
+ libclass-dbi-mysql-perl,
+ ${perl:Depends},
+ ${misc:Depends},
 Description: NGCP component to reduce amoutn of "lost" calls.
  A component for NGCP platform that provides a failsafe mechanism
  to reduce amoutn of "lost" calls in case of unexpected system crashes.
