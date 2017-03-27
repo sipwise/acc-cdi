@@ -2,9 +2,9 @@ Source: ngcp-acc-cdi
 Section: utils
 Priority: extra
 Maintainer: Sipwise Development Team <support@sipwise.com>
-Build-Depends: debhelper (>= 5)
-Standards-Version: 3.9.7
-Homepage: http://sipwise.com/
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://www.sipwise.com/
 
 Package: ngcp-acc-cdi
 Architecture: all
@@ -12,8 +12,8 @@ Depends:
  libclass-dbi-mysql-perl,
  ${perl:Depends},
  ${misc:Depends},
-Description: NGCP component to reduce amoutn of "lost" calls.
- A component for NGCP platform that provides a failsafe mechanism
- to reduce amoutn of "lost" calls in case of unexpected system crashes.
- Creates intermediate records for ongoing calls based on acc start (INVITE)
- records and fixes "lost" calls based on last intermediate time.
+Description: NGCP component to reduce amount of "lost" calls
+ A component for NGCP that provides a failsafe mechanism to reduce amount
+ of "lost" calls in case of unexpected system crashes. Creates intermediate
+ records for ongoing calls based on acc start (INVITE) records and fixes
+ "lost" calls based on last intermediate time.
