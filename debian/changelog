@@ -1,3 +1,9 @@
+ngcp-acc-cdi (1.12.6.0+0~mr4.5.6.0) unstable; urgency=medium
+
+  * New release.
+
+ -- Sipwise Jenkins Builder <jenkins@sipwise.com>  Mon, 19 Jun 2017 18:59:13 +0200
+
 ngcp-acc-cdi (1.12.5.0+0~mr4.5.5.0) unstable; urgency=medium
 
   * New release.
