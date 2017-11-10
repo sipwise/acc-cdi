@@ -1,8 +1,9 @@
 Source: ngcp-acc-cdi
 Section: utils
-Priority: extra
+Priority: optional
 Maintainer: Sipwise Development Team <support@sipwise.com>
-Build-Depends: debhelper (>= 9)
+Build-Depends:
+ debhelper (>= 9),
 Standards-Version: 3.9.8
 Homepage: https://www.sipwise.com/
 
