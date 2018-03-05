@@ -137,13 +137,13 @@ sub check_active {
 # Get active calls from kamailio
 #----------------------------------------------------------------------
 sub get_active_calls {
-    open(my $calls, $CONFIG{NGCP_KAMCTL}." proxy fifo dlg_list |")
+    open(my $calls, $CONFIG{NGCP_KAMCTL}." proxy fifo dlg.list |")
         || die "Can't open kamctl: $!";
 
     my @active_calls;;
     while (<$calls>) {
         chomp $_;
-        if ($_ =~ /callid::\s+(\S+)$/) {
+        if ($_ =~ /call-id:\s+(\S+)$/) {
             push @active_calls, $1;
         }
     }
