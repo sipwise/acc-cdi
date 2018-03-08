@@ -11,8 +11,8 @@ Package: ngcp-acc-cdi
 Architecture: all
 Depends:
  libclass-dbi-mysql-perl,
- ${perl:Depends},
  ${misc:Depends},
+ ${perl:Depends},
 Description: NGCP component to reduce amount of "lost" calls
  A component for NGCP that provides a failsafe mechanism to reduce amount
  of "lost" calls in case of unexpected system crashes. Creates intermediate
