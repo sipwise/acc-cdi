@@ -19,10 +19,10 @@ BEGIN {
 my %CONFIG             = ();
 my $pid_file           = '/var/run/ngcp-acc-cdi.pid';
 my $config_file        = '/etc/ngcp-acc-cdi/acc-cdi.conf';
-my $mysql_sipwise_conf = '/etc/mysql/sipwise.cnf';
+my $dbcredentials      = '/etc/mysql/sipwise_extra.cnf';
 my $dbh;
 my $ch  = {};
-my $dsn = 'DBI:mysql:database=accounting;host=localhost';
+my $dsn = "DBI:mysql:database=accounting;host=localhost;mysql_read_default_file=${dbcredentials}";
 my %cnt = qw(updated 0 cleaned 0 finished 0 skipped 0);
 
 # Read config
@@ -37,15 +37,6 @@ sub read_config {
         $CONFIG{$1} = $2;
     }
     close $config_fh;
-
-    # use sipwise user to access mysql
-    open (my $mysql_fh, $mysql_sipwise_conf) 
-        || die "Can't open mysql credentials file: $!";
-    my $mysql_pass = <$mysql_fh>;
-    chomp $mysql_pass;
-    $mysql_pass =~ s/^SIPWISE_DB_PASSWORD='(.+)'.*$/$1/;
-    $CONFIG{MYSQL_PASS} = $mysql_pass;
-    close $mysql_fh;
 
     # redirect out/err to the log file
     if ($CONFIG{LOGGING}) {
@@ -333,8 +324,7 @@ sub main {
     }
 
     # db connect, with tx support for inserts/updates
-    $dbh = DBI->connect($dsn, 'sipwise', $CONFIG{MYSQL_PASS}, 
-                        { AutoCommit => 0 });
+    $dbh = DBI->connect($dsn, "", "", { AutoCommit => 0 });
     die "Can't connect to mysql: ".$DBI::errstr if $DBI::err;
 
     # fetch start acc records, active calls for processing
