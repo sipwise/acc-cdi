@@ -1,0 +1,9 @@
+Verified+1: Jenkins Jenkins
+Code-Review+2: Guillem Jover <gjover@sipwise.com>
+Code-Review+1: Michael Prokop <mprokop@sipwise.com>
+Code-Review+2: Kirill Solomko <ksolomko@sipwise.com>
+Submitted-by: Alexander Lutay <alutay@sipwise.com>
+Submitted-at: Thu, 10 Oct 2019 17:12:10 +0200
+Reviewed-on: http://gerrit.mgm.sipwise.com/c/acc-cdi/+/34079
+Project: acc-cdi
+Branch: refs/heads/master
